@@ -118,10 +118,10 @@ class Patient:
         return f'{self.full_name():^30}|{doc:^30}|{self.__age:^5}|{self.__mobile:^15}|{self.__postcode:^10}'
 
     
-# def __str__(self):
-    #     if self.__doctor is not None:
-    #         doctor_name = self.__doctor.get_full_name()
-    #     else:
-    #         doctor_name = "Not Assigned"
-    #     return f'{self.full_name():^30}|{doctor_name:^30}|{self.__age:^5}|{self.__mobile:^15}|{self.__postcode:^10}'
+def __str__(self):
+        if self.__doctor is not None:
+            doctor_name = self.__doctor.get_full_name()
+        else:
+            doctor_name = "Not Assigned"
+        return f'{self.full_name():^30}|{doctor_name:^30}|{self.__age:^5}|{self.__mobile:^15}|{self.__postcode:^10}'
     
